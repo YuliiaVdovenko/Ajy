@@ -1,0 +1,91 @@
+
+//-----------------------Blog page Style -----------------------
+
+.blog-name {
+  font-size: 3rem;
+  color: $white;
+  display: inline-block;
+  padding-top: 10rem;
+  padding-bottom: 4rem;
+  @media (min-width: 768px){
+    font-size: 4rem;
+  }
+}
+
+.link-button {
+  color: $black;
+  top: 0;
+  right: 1.5rem;
+  position: absolute;
+  padding: 0.7rem;
+  background-color: $white;
+}
+.link-button:hover {
+  color: $primary;
+}
+.post-item {
+  img {
+    width: 100%;
+  }
+}
+
+.img-title {
+  margin: 0;
+  color: $black;
+  text-align: left;
+  display: inline-block;
+  padding: 1rem 0;
+  font-weight: 700;
+}
+.img-title:hover {
+  color: $primary;
+}
+
+.img-title-div {
+  border: 1px solid rgba(0,0,0,.3);
+  p {
+    font-size: 1.3rem;
+    color: $second-color;
+    padding: 1rem;
+    line-height: 1.6rem;
+    font-weight: 600;
+  }
+}
+
+
+.clock {
+  border-top: 1px solid rgba(0,0,0,.3);
+  padding: 1rem 0;
+}
+.blog-date {
+  font-size: 1.2rem;
+  color: $black;
+}
+.clock-i {
+    padding-right: 1rem;
+    font-size: 2rem;
+}
+
+
+//---------Pagination --------------------
+
+.nav-links {
+  span {
+    font-size: 1.6rem;
+    padding: 1rem 1.5rem;
+    background-color: $primary;
+    color: $black;
+    display: inline-block;
+  }
+  a {
+    font-size: 1.6rem;
+    padding: 1rem 1.5rem;
+    background-color: $primary;
+    color: $white;
+    display: inline-block;
+    margin: 0 1rem;
+  }
+  .next, .prev {
+    display: none;
+  }
+}

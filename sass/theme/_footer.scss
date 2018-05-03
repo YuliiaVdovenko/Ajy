@@ -1,0 +1,133 @@
+
+//----------------------Clients-Section---------------------
+
+.clients-section {
+  background-color: $primary;
+}
+
+.element-item {
+  img {
+    width: 80%;
+    text-align: center;
+  }
+}
+
+
+// -------------- Footer Common Settings --------------------
+
+.footer-p {
+  text-align: left;
+  width: 100%;
+}
+
+
+iframe {
+  padding-left: 0!important;
+  padding-right: 0!important;
+  width: 100%;
+}
+
+//-------------------- list of contacts --------------------
+.social-icon {
+  font-size: 3rem;
+  color: $white;
+  margin-right: 1rem;
+}
+address {
+  width: 80%;
+  color: $white;
+  font-size: 1.7rem;
+  font-weight: 400;
+  margin-bottom: 0;
+  text-align: left;
+  @media (min-width: 992xp) {
+    width: 50%;
+  }
+}
+.tel:link, .tel:visited {
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: $white;
+}
+.tel:hover {
+  color: $primary;
+}
+
+
+// -------------------- Site Info + Footer Navigation ----------------
+.footer-background {
+  background-color: $second-color;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.site-info {
+  background-color: $primary;
+  text-align: center;
+  padding: 1rem 0;
+  span {
+    color:$white;
+    font-size: 1.2rem;
+  }
+  time {
+    color:$white;
+    font-size: 1.2rem;
+  }
+}
+
+
+// ---------------- Contact Form --------------
+
+.wpcf7 {
+  max-width: 100%;
+  input[type=text], input[type=email], textarea {
+    font-size: 1.5rem;
+    border-color: transparent;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    &:focus {
+      border-color: transparent;
+      box-shadow: none;
+    }
+  }
+  p {
+    display: inline-block;
+  }
+  input[type=submit] {
+    color: $white;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 3rem;
+    text-transform: uppercase;
+    background-color: $primary;
+    border: none;
+    padding: 1rem 2rem;
+    &:hover {
+      background-color: $second-color;
+      color: $primary;
+    }
+    &:focus{
+      background-color: $second-color;
+      color: $primary;
+      box-shadow: none;
+    }
+    &:active {
+      box-shadow: none!important;
+      background-color: $second-color!important;
+      border: none!important;
+      color: $primary!important;
+    }
+  }
+}
+
+div.wpcf7-mail-sent-ok {
+  border: 1px solid $white;
+  color: $white;
+  font-size: 1.5rem;
+}
+
+.wpcf7 {
+  .wpcf7-not-valid-tip, .wpcf7-validation-errors {
+  font-size: 1.5rem;
+  }
+}

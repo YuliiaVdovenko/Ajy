@@ -1,0 +1,245 @@
+
+//---------------- Welcome Section -------------------
+.padding {
+  padding-top: 9rem;
+  padding-bottom: 4rem;
+  @media (min-width: 556px) {
+    padding-bottom: 7rem;
+  }
+  @media (min-width: 768px) {
+    padding-top: 12rem;
+    padding-bottom: 10rem;
+  }
+}
+.welcome-section {
+  background-color: $primary;
+  position: relative;
+  .arrow-down {
+    position: absolute;
+    bottom: 1rem;
+    right: 50%;
+    transform: translateX(50%);
+    i {
+    cursor: pointer;
+    color: $white;
+   }
+  }
+}
+
+.image-background {
+  text-align: center;
+}
+
+.section-image {
+  width: 50%;
+  @media (min-width: 768px) {
+    width: 70%;
+  }
+}
+.welcome-title {
+  font-size: 5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $white;
+  @media (min-width: 992px) {
+    font-size: 6rem;
+  }
+  .us {
+    color: $second-color;
+    font-weight: 700;
+  }
+  .us:after {
+    content: "?";
+    font-weight: 700;
+    font-size: 5rem;
+    color: $white;
+    @media (min-width: 992px) {
+    font-size: 6rem;
+    }
+  }
+}
+
+.welcome-subtitle {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: $white;
+  line-height: 3rem;
+   @media (min-width: 992px) {
+      font-size: 4rem;
+      line-height: 4rem;
+    }
+}
+
+.welcome-clients {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: $white;
+   @media (min-width: 992px) {
+      font-size: 2.5rem;
+    }
+}
+.welcome-p {
+  color: $white;
+   @media (min-width: 992px) {
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+    }
+}
+
+
+//---------------- About Section -------------------
+
+.about-title {
+  color: $text-color;
+  font-size: 3.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  @media (min-width: 992px) {
+    font-size: 4rem;
+  }
+}
+
+.about-text {
+  p {
+  font-size: 1.5rem;
+    font-weight: 300;
+    color: $text-color;
+    line-height: 2rem;
+    text-align: left;
+    @media (min-width: 992px) {
+      font-size: 1.6rem;
+    }
+    span {
+      color: $primary;
+    }
+  }
+}
+
+//----------------Offer Section --------------------------
+
+.offer-section {
+  background-color: $second-color;
+  text-align: center;
+}
+
+.offer-p {
+  color: $white;
+  margin: auto;
+  @media (min-width: 768px) {
+    font-size: 1.6rem;
+    width: 80%;
+  }
+}
+.offer-image {
+  width: 12rem;
+  @media (min-width: 768px) {
+    width: 15rem;
+  }
+}
+.offer-image-title {
+  padding-top: 12rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 3rem;
+  color: $white;
+}
+.offer-image-text {
+  color: $white;
+}
+
+//-----------------Portfolio list --------------------
+
+.work-header {
+  color: $black;
+}
+.work-p {
+  color: $black;
+}
+
+.button-port {
+  color: $second-color;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  border-bottom: 1px solid transparent;
+}
+.button-port:hover {
+  border-bottom: 1px solid $primary;
+  color: $primary;
+  cursor: pointer;
+}
+
+.portfolio-item {
+  img {
+    width: 100%;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+  }
+  .img-border:hover img{
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+  }
+}
+
+.img-border {
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-hover {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  left: 2rem;
+  bottom: 2rem;
+  text-align: center;
+  margin: 0;
+  border: 0.5rem solid $black;
+}
+
+.img-border:hover .portfolio-hover {
+  display: flex;
+  -webkit-animation: cssAnimation 1s 1 ease;
+  -moz-animation: cssAnimation 1s 1 ease;
+  -o-animation: cssAnimation 1s 1 ease;
+  @-webkit-keyframes cssAnimation {
+    from {
+      -webkit-transform: scale(1.2);
+    }
+    to {
+      -webkit-transform: scale(1);
+    }
+  }
+  @-moz-keyframes cssAnimation {
+    from {
+      -moz-transform: scale(1.2);
+    }
+    to {
+      -moz-transform: scale(1);
+    }
+  }
+  @-o-keyframes cssAnimation {
+    from {
+      -o-transform: scale(1.2);
+    }
+    to {
+      -o-transform: scale(1);
+    }
+  }
+}
+
+.hover-a:link, .hover-a:visited {
+  font-size: 2rem;
+  color: $black;
+  padding: 1rem 2rem;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+

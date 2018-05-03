@@ -1,0 +1,45 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+html {
+  font-size: 10px;
+}
+
+span, p, h2, h3, h4, h5, i, time, address {
+  font-weight: 400;
+  font-family: "Open Sans";
+  margin: 0;
+}
+
+a:link, a:visited, a:hover {
+  text-decoration: none;
+  font-family: "Open Sans";
+  margin: 0;
+}
+
+li{
+  list-style-type:none;
+  margin: 0;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+
+.section-title {
+  color: $white;
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 4rem;
+  @media (min-width: 768px) {
+    font-size: 4rem;
+  }
+}
+
+.section-text {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 2rem;
+}

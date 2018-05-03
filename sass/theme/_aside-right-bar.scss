@@ -1,0 +1,95 @@
+.sidebar {
+  .aside-bar {
+    background-color: $text-color;
+    padding-bottom:3rem;
+    padding-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  form {
+    padding-bottom: 2rem;
+    label {
+      display: none;
+    }
+    .input-group{
+      width: 80%;
+      margin: auto;
+      border: 1px solid $white;
+      input {
+        color: $white;
+        font-size: 1.5rem;
+        padding: 1.5rem;
+      }
+      .submit {
+        display: none;
+      }
+    }
+    .field {
+      font-size: 2rem;
+      background-color: transparent;
+      color: $second-color;
+      border: none;
+    }
+  }
+  ul {
+    color: $white;
+    font-size: 1.5rem;
+    li {
+      padding: 0 3rem 2rem 3rem;
+    }
+    a:link, a:visited {
+      color: $white;
+      font-size: 2rem;
+      line-height: 2.5rem;
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+  .aside-title {
+    color: $white;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    text-transform: uppercase;
+    padding-bottom: 3rem;
+    text-align: center;
+    font-weight: 600;
+  }
+}
+
+//------------------ mail chimp form ------------------------
+.mc4wp-form-fields {
+  text-align: center;
+  padding: 0 3rem;
+  p {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: $white;
+    text-align: left;
+  }
+  .email {
+    text-align: left;
+    width: 100%;
+    font-size: 1.5rem;
+    color: $white;
+    background: transparent;
+    border: 1px solid $white;
+    padding: 1.5rem;
+    margin: 3rem 0;
+  }
+  .submit {
+    display: block;
+    width: 100%;
+    background-color: $primary;
+    color: $white;
+    font-size: 2rem;
+    border: 1px solid $white;
+    padding: 1rem;
+    text-transform: uppercase;
+  }
+}
+
+.mc4wp-success {
+  color:$white;
+  font-size: 1.5rem;
+  padding: 3rem;
+}
