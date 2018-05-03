@@ -17,7 +17,7 @@ function theme_enqueue_styles() {
 	$the_theme = wp_get_theme();
     wp_enqueue_style( 'child-understrap-styles', get_stylesheet_directory_uri() . '/css/child-theme.min.css', array(), $the_theme->get( 'Version' ) );
     wp_enqueue_script( 'jquery');
-	wp_enqueue_script( 'popper-scripts', get_template_directory_uri() . '/js/popper.min.js', array(), false);
+    wp_enqueue_script( 'popper-scripts', get_template_directory_uri() . '/js/popper.min.js', array(), false);
     wp_enqueue_script( 'child-understrap-scripts', get_stylesheet_directory_uri() . '/js/child-theme.min.js', array(), $the_theme->get( 'Version' ), true );
 
     wp_enqueue_script( 'isotope-script',  'https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js', array(), $the_theme->get( 'Version' ), true );
@@ -53,18 +53,18 @@ require_once ('inc/widgets.php');
 
 // Удаляем H2 из пагинации
 add_filter('navigation_markup_template', 'my_navigation_template', 10, 2 );
-	function my_navigation_template( $template, $class ){
-        return '<nav class="%1$s" role="navigation"><div class="nav-links">%3$s</div></nav>';
-    }
+function my_navigation_template( $template, $class ){
+    return '<nav class="%1$s" role="navigation"><div class="nav-links">%3$s</div></nav>';
+}
 ?>
 
 <?php require_once ('inc/taxomony.php'); ?>
 
 <?php
-	function isotope_classes($id){
-        $terms = wp_get_post_terms ( get_the_ID(), 'projects');
-        foreach ($terms as $term) {
-            echo $term->slug. ' ';
-        }
+function isotope_classes($id){
+    $terms = wp_get_post_terms ( get_the_ID(), 'projects');
+    foreach ($terms as $term) {
+        echo $term->slug. ' ';
     }
+}
 ?>

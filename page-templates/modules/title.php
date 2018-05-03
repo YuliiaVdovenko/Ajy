@@ -5,14 +5,14 @@ $container   = get_theme_mod( 'understrap_container_type' );?>
 
 <section class="welcome-section pt-5 pb-5">
 	<div class="<?php echo esc_attr( $container ); ?> d-flex flex-wrap align-items-center padding">
-			
-			<?php if( get_sub_field('back_image') ): ?>
-				<div class="image-background col-12 col-md-6" >
-					<img src="<?= get_sub_field('back_image'); ?>" alt="back_image" class="section-image pb-5 pb-md-0">
-				</div>
-			<?php endif; ?>
+		
+		<?php if( get_sub_field('back_image') ): ?>
+			<div class="image-background col-12 col-md-6" >
+				<img src="<?= get_sub_field('back_image'); ?>" alt="back_image" class="section-image pb-5 pb-md-0">
+			</div>
+		<?php endif; ?>
 
-			<?php if( get_sub_field('title') ): ?>
+		<?php if( get_sub_field('title') ): ?>
 			<div class="col-12 col-md-6 text-center text-md-left">
 				<h2 class="welcome-title pb-5"> 
 					<?= get_sub_field('title'); ?>
@@ -39,7 +39,7 @@ $container   = get_theme_mod( 'understrap_container_type' );?>
 					<?= get_sub_field('about'); ?>
 				</p>
 			<?php endif; ?>
-			</div>
+		</div>
 	</div>
 	<span class="go-anchor arrow-down">
 		<i class="fa fa-angle-down fa-4x"></i>

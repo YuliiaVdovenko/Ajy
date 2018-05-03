@@ -26,17 +26,17 @@ $container   = get_theme_mod( 'understrap_container_type' );
 					</header>
 					
 					<ul class="d-flex flex-wrap">
-					<?php while ( have_posts() ) : the_post(); ?>
-						<li class="mb-5 p-3 content-block">
-							<?php get_template_part( 'loop-templates/content', get_post_format() );?>
-						</li>
-					<?php endwhile; ?>
+						<?php while ( have_posts() ) : the_post(); ?>
+							<li class="mb-5 p-3 content-block">
+								<?php get_template_part( 'loop-templates/content', get_post_format() );?>
+							</li>
+						<?php endwhile; ?>
 					<?php else : ?>
-					<?php get_template_part( 'loop-templates/content', 'none' ); ?>
+						<?php get_template_part( 'loop-templates/content', 'none' ); ?>
 					</ul>
 				<?php endif; ?>
 
-					<?php understrap_pagination(); ?>
+				<?php understrap_pagination(); ?>
 			</div>
 
 			<aside class="sidebar col-12 col-md-4 pt-5 pb-5">

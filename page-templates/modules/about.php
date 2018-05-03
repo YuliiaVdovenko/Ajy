@@ -14,8 +14,8 @@ $container   = get_theme_mod( 'understrap_container_type' );?>
 				<h2 class="about-title pb-3 pb-md-5 pt-5 pt-md-0"> 
 					<?= get_sub_field('welcome_title'); ?>
 				</h2>
-		<?php endif; ?>
-		<?php if( get_sub_field('welcome_text') ): ?>
+			<?php endif; ?>
+			<?php if( get_sub_field('welcome_text') ): ?>
 				<p>
 					<?= get_sub_field('welcome_text'); ?>
 				</p>
